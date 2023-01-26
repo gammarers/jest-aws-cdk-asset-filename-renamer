@@ -1,4 +1,4 @@
-import { typescript } from 'projen';
+import { javascript, typescript } from 'projen';
 const project = new typescript.TypeScriptProject({
   authorName: 'yicr',
   authorEmail: 'yicr@users.noreply.github.com',
@@ -20,5 +20,7 @@ const project = new typescript.TypeScriptProject({
     },
   },
   publishTasks: true,
+  releaseToNpm: true,
+  npmAccess: javascript.NpmAccess.PUBLIC,
 });
 project.synth();
