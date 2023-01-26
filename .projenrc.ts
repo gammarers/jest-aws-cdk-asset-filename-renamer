@@ -19,5 +19,6 @@ const project = new typescript.TypeScriptProject({
       snapshotSerializers: ['<rootDir>/src/index.ts'],
     },
   },
+  publishTasks: true,
 });
 project.synth();
