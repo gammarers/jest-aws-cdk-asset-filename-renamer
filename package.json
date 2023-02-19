@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.65.0",
-    "constructs": "^10.1.254"
+    "constructs": "^10.1.255"
   },
   "keywords": [
     "asset",
