@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
-    "@types/node": "^14",
+    "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
     "eslint": "^8",
@@ -41,9 +41,9 @@
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "jest": "^29.5.0",
-    "jest-junit": "^13",
+    "jest-junit": "^15",
     "npm-check-updates": "^16",
-    "projen": "^0.68.20",
+    "projen": "^0.69.2",
     "standard-version": "^9",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
@@ -60,6 +60,9 @@
     "cdk",
     "jest"
   ],
+  "engines": {
+    "node": ">= 16.0.0"
+  },
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "publishConfig": {
