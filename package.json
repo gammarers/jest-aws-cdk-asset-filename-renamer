@@ -43,15 +43,15 @@
     "jest": "^29.5.0",
     "jest-junit": "^15",
     "npm-check-updates": "^16",
-    "projen": "^0.69.17",
+    "projen": "^0.70.1",
     "standard-version": "^9",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.71.0",
-    "constructs": "^10.1.295"
+    "aws-cdk-lib": "^2.72.0",
+    "constructs": "^10.1.296"
   },
   "keywords": [
     "asset",
