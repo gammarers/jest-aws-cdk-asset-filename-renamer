@@ -1,10 +1,10 @@
-# Jest serializer cdk asset
+# Jest serializer aws cdk asset filename replacer
 
 Jest AWS CDK Construct snapshot serializer.
 
 ## Installation
 ```shell
-npm install --save-dev @yicr/jest-serializer-cdk-asset
+npm install --save-dev @gammarer/jest-serializer-aws-cdk-asset-filename-replacer
 ```
 
 ## Usage
@@ -12,14 +12,14 @@ You need to tell Jest to use the serializer. Add this to your Jest config:
 
 ```json
 "snapshotSerializers": [
-  "<rootDir>/node_modules/@yicr/jest-serializer-cdk-asset"
+  "<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer"
 ]
 ```
 or add this projenrc.ts 
 ```typescript
   jestOptions: {
     jestConfig: {
-      snapshotSerializers: ['<rootDir>/node_modules/@yicr/jest-serializer-cdk-asset']
+      snapshotSerializers: ['<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer']
     }
   }
 ```
