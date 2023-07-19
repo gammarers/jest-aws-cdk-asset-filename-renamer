@@ -3,9 +3,9 @@ const project = new typescript.TypeScriptProject({
   authorName: 'yicr',
   authorEmail: 'yicr@users.noreply.github.com',
   defaultReleaseBranch: 'main',
-  name: '@yicr/jest-serializer-cdk-asset',
+  name: '@gammarer/jest-serializer-aws-cdk-asset-filename-replacer',
   projenrcTs: true,
-  repository: 'https://github.com/yicr/jest-serializer-cdk-asset.git',
+  repository: 'https://github.com/yicr/jest-serializer-aws-cdk-asset-filename-replacer.git',
   keywords: ['aws', 'cdk', 'aws-cdk', 'jest', 'asset'],
   deps: [
     'aws-cdk-lib',

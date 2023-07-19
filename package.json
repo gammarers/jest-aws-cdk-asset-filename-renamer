@@ -1,8 +1,8 @@
 {
-  "name": "@yicr/jest-serializer-cdk-asset",
+  "name": "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yicr/jest-serializer-cdk-asset.git"
+    "url": "https://github.com/yicr/jest-serializer-aws-cdk-asset-filename-replacer.git"
   },
   "scripts": {
     "build": "npx projen build",
