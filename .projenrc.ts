@@ -7,11 +7,11 @@ const project = new typescript.TypeScriptProject({
   projenrcTs: true,
   repository: 'https://github.com/yicr/jest-serializer-aws-cdk-asset-filename-replacer.git',
   keywords: ['aws', 'cdk', 'aws-cdk', 'jest', 'asset'],
+  description: 'this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)',
   deps: [
     'aws-cdk-lib',
     'constructs',
   ],
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [],
   jestOptions: {
     jestConfig: {

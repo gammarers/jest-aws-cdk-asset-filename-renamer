@@ -1,6 +1,7 @@
 # Jest serializer aws cdk asset filename replacer
 
-Jest AWS CDK Construct snapshot serializer.
+Jest AWS CDK Constru
+this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)
 
 ## Installation
 ```shell

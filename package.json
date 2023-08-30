@@ -1,5 +1,6 @@
 {
   "name": "@gammarer/jest-serializer-aws-cdk-asset-filename-replacer",
+  "description": "this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)",
   "repository": {
     "type": "git",
     "url": "https://github.com/yicr/jest-serializer-aws-cdk-asset-filename-replacer.git"
