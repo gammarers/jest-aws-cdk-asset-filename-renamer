@@ -7,11 +7,11 @@ const project = new typescript.TypeScriptProject({
   projenrcTs: true,
   repository: 'https://github.com/yicr/jest-serializer-aws-cdk-asset-filename-replacer.git',
   keywords: ['aws', 'cdk', 'aws-cdk', 'jest', 'asset'],
+  description: 'this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)',
   deps: [
     'aws-cdk-lib',
     'constructs',
   ],
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [],
   jestOptions: {
     jestConfig: {
@@ -21,12 +21,12 @@ const project = new typescript.TypeScriptProject({
   publishTasks: true,
   releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
-  minNodeVersion: '16.0.0',
-  workflowNodeVersion: '16.19.1',
+  minNodeVersion: '18.0.0',
+  workflowNodeVersion: '18.17.1',
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
-      schedule: javascript.UpgradeDependenciesSchedule.expressions(['0 17 * * *']),
+      schedule: javascript.UpgradeDependenciesSchedule.expressions(['0 16 * * 4']), // every thursday 16:00 (JST/FRI/02:00)
     },
   },
   autoApproveOptions: {
