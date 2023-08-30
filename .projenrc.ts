@@ -21,7 +21,7 @@ const project = new typescript.TypeScriptProject({
   publishTasks: true,
   releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
-  minNodeVersion: '16.0.0',
+  minNodeVersion: '18.0.0',
   workflowNodeVersion: '16.19.1',
   depsUpgradeOptions: {
     workflowOptions: {
