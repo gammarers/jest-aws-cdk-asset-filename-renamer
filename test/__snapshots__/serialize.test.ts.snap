@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should match snapshot 1`] = `
-{
-  "Parameters": {
-    "BootstrapVersion": {
+Object {
+  "Parameters": Object {
+    "BootstrapVersion": Object {
       "Default": "/cdk-bootstrap/hnb659fds/version",
       "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
       "Type": "AWS::SSM::Parameter::Value<String>",
     },
   },
-  "Resources": {
-    "Function76856677": {
-      "DependsOn": [
+  "Resources": Object {
+    "Function76856677": Object {
+      "DependsOn": Array [
         "FunctionServiceRole675BB04A",
       ],
-      "Properties": {
-        "Code": {
+      "Properties": Object {
+        "Code": Object {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-east-1",
           "S3Key": "HASH.zip",
         },
         "Handler": "index.lambda_handler",
-        "Role": {
-          "Fn::GetAtt": [
+        "Role": Object {
+          "Fn::GetAtt": Array [
             "FunctionServiceRole675BB04A",
             "Arn",
           ],
@@ -30,27 +30,27 @@ exports[`Should match snapshot 1`] = `
       },
       "Type": "AWS::Lambda::Function",
     },
-    "FunctionServiceRole675BB04A": {
-      "Properties": {
-        "AssumeRolePolicyDocument": {
-          "Statement": [
-            {
+    "FunctionServiceRole675BB04A": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
-              "Principal": {
+              "Principal": Object {
                 "Service": "lambda.amazonaws.com",
               },
             },
           ],
           "Version": "2012-10-17",
         },
-        "ManagedPolicyArns": [
-          {
-            "Fn::Join": [
+        "ManagedPolicyArns": Array [
+          Object {
+            "Fn::Join": Array [
               "",
-              [
+              Array [
                 "arn:",
-                {
+                Object {
                   "Ref": "AWS::Partition",
                 },
                 ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
@@ -62,22 +62,22 @@ exports[`Should match snapshot 1`] = `
       "Type": "AWS::IAM::Role",
     },
   },
-  "Rules": {
-    "CheckBootstrapVersion": {
-      "Assertions": [
-        {
-          "Assert": {
-            "Fn::Not": [
-              {
-                "Fn::Contains": [
-                  [
+  "Rules": Object {
+    "CheckBootstrapVersion": Object {
+      "Assertions": Array [
+        Object {
+          "Assert": Object {
+            "Fn::Not": Array [
+              Object {
+                "Fn::Contains": Array [
+                  Array [
                     "1",
                     "2",
                     "3",
                     "4",
                     "5",
                   ],
-                  {
+                  Object {
                     "Ref": "BootstrapVersion",
                   },
                 ],
