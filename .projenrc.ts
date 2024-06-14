@@ -5,7 +5,7 @@ const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'main',
   name: '@gammarers/jest-aws-cdk-asset-filename-renamer',
   projenrcTs: true,
-  repository: 'https://github.com/yicr/jest-aws-cdk-asset-filename-renamer.git',
+  repository: 'https://github.com/gammarers/jest-aws-cdk-asset-filename-renamer.git',
   keywords: ['aws', 'cdk', 'aws-cdk', 'jest', 'asset'],
   description: 'this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)',
   devDeps: [
