@@ -8,11 +8,9 @@ const project = new typescript.TypeScriptProject({
   repository: 'https://github.com/yicr/jest-aws-cdk-asset-filename-renamer.git',
   keywords: ['aws', 'cdk', 'aws-cdk', 'jest', 'asset'],
   description: 'this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)',
-  deps: [
+  devDeps: [
     'aws-cdk-lib',
-    'constructs',
   ],
-  devDeps: [],
   jestOptions: {
     jestConfig: {
       snapshotSerializers: ['<rootDir>/src/index.ts'],
