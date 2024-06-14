@@ -1,11 +1,11 @@
-# Jest serializer aws cdk asset filename replacer
+# Jest aws cdk asset filename renamer
 
-Jest AWS CDK Constru
-this package is aws cdk construct asset filename replacer(RandomString.zip to HASH.zip)
+this package is aws cdk construct asset filename renaming(RandomString.zip to HASH.zip)
 
 ## Installation
+
 ```shell
-npm install --save-dev @gammarer/jest-serializer-aws-cdk-asset-filename-replacer
+npm install --save-dev @gammarers/jest-aws-cdk-asset-filename-renamer
 ```
 
 ## Usage
@@ -13,14 +13,14 @@ You need to tell Jest to use the serializer. Add this to your Jest config:
 
 ```json
 "snapshotSerializers": [
-  "<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer"
+  "<rootDir>/node_modules/@gammarers/jest-aws-cdk-asset-filename-renamer"
 ]
 ```
 or add this projenrc.ts 
 ```typescript
   jestOptions: {
     jestConfig: {
-      snapshotSerializers: ['<rootDir>/node_modules/@gammarer/jest-serializer-aws-cdk-asset-filename-replacer']
+      snapshotSerializers: ['<rootDir>/node_modules/@gammarers/jest-aws-cdk-asset-filename-renamer']
     }
   }
 ```
@@ -28,9 +28,9 @@ or add this projenrc.ts
 And your test.
 
 ```typescript
-const stack = new Stack(app, 'TestingStack');
+const stack = new Stack(app, 'TestStack');
 new lambda.Function(stack, 'Function', {
-    runtime: lambda.Runtime.NODEJS_18_X,
+    runtime: lambda.Runtime.NODEJS_22_X,
     code: lambda.Code.fromAsset(path.join(__dirname, '../asset/sample-func')),
     handler: 'index.lambda_handler',
 });
